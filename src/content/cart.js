@@ -15,7 +15,7 @@
  */
 module.exports = {
   websiteUrl: 'https://jaces.xyz/',
-  inviteUrl: 'https://discord.gg/f0bPUNvCFx',
+  inviteUrl: 'https://discord.gg/fQbPUNvCFx',
 
   // ── Jace's Middleman Service embed ──────────────────────────
   embedColor: 0x5865f2, // Discord blurple (blue border in the screenshot)

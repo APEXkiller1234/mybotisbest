@@ -2,6 +2,7 @@
 
 const { EmbedBuilder } = require('discord.js');
 const cart = require('../../content/cart');
+const jmsService = require('../../content/jmsService');
 const { resolveImage } = require('../../utils/images');
 
 module.exports = {
@@ -25,10 +26,13 @@ module.exports = {
     ].join('\n');
 
     const embed = new EmbedBuilder()
-      .setColor(cart.embedColor)
-      .setTitle(cart.embedTitle)
-      .setDescription(cart.embedDescription)
-      .setFooter({ text: cart.embedFooter });
+      .setColor(jmsService.embedColor)
+      .setTitle(jmsService.embedTitle)
+      .setDescription(jmsService.embedDescription)
+      .setFooter({ text: jmsService.embedFooter });
+
+    const thumbnailUrl = cfg.thumbnailUrl || jmsService.thumbnailUrl;
+    if (thumbnailUrl) embed.setThumbnail(thumbnailUrl);
 
     // Optional banner attached above the embeds (like the screenshot).
     const image = await resolveImage({

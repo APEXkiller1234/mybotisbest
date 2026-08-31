@@ -58,6 +58,7 @@ const jsonChannels = jsonConfig.channels || {};
 const jsonLeaderboard = jsonConfig.leaderboard || {};
 const jsonDisguise = jsonConfig.disguise || {};
 const jsonCart = jsonConfig.cart || {};
+const jsonServers = jsonConfig.servers || {};
 
 const config = {
   token: process.env.DISCORD_TOKEN,
@@ -98,6 +99,36 @@ const config = {
       '',
     imagePath:
       jsonCart.imagePath ??
+      '',
+
+    // Optional JMS logo shown as the embed thumbnail.
+    thumbnailUrl:
+      jsonCart.thumbnailUrl ??
+      '',
+  },
+
+  servers: {
+    // Invite links posted by !servers (one per line).
+    inviteUrls:
+      Array.isArray(jsonServers.inviteUrls) && jsonServers.inviteUrls.length > 0
+        ? jsonServers.inviteUrls.map(String)
+        : parseList(process.env.SERVER_INVITE_URLS),
+
+    // Website used in the "All links can be found at ..." line.
+    websiteUrl:
+      jsonServers.websiteUrl ??
+      process.env.SERVER_WEBSITE_URL ??
+      '',
+
+    // Optionally override the whole "All links..." line ({websiteUrl}).
+    allLinksText:
+      jsonServers.allLinksText ??
+      '',
+
+    // Optional JMS logo shown as the embed thumbnail.
+    embedThumbnailUrl:
+      jsonServers.embedThumbnailUrl ??
+      process.env.SERVER_EMBED_THUMBNAIL_URL ??
       '',
   },
 

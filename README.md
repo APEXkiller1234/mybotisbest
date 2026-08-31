@@ -13,6 +13,7 @@ Every command is restricted to admins. The current command set:
 | `!say` / `/say` | Makes the bot say any text, optionally as an embed.              | 🛡️ Admin only |
 | `!setbot` / `/setbot` | Sets the bot status (online/idle/dnd/invisible) and activity (playing/watching/listening/competing/streaming/custom). | 🛡️ Admin only |
 | `!cart`       | Posts the Jace's Middleman Service card (website + invite links, banner, embed). | 🛡️ Admin only |
+| `!servers`    | Posts all server invites (auto-rendered guild cards) + the Middleman Service embed. | 🛡️ Admin only |
 
 **Server-name interaction:** when the server is renamed to `Horizon Shop`
 the bot automatically changes its username **and role name** to a random
@@ -49,7 +50,8 @@ mybotisbest/
     │       ├── leaderboard.js # The !leaderboard command (images + notes)
 │       ├── say.js         # The !say command (text / -e embed)
 │       ├── setbot.js      # The !setbot command (status + activity)
-│       └── cart.js        # The !cart command (website/invite + embed)
+│       ├── cart.js        # The !cart command (website/invite + embed)
+│       └── servers.js     # The !servers command (invites + embed)
     ├── slash-commands/
     │   ├── say.js             # The /say command (text + embed option)
     │   └── setbot.js          # The /setbot command (status + activity)
@@ -65,7 +67,9 @@ mybotisbest/
     │   ├── mmtos.txt          # Full Middleman Terms of Service text
     │   ├── mmtosPanel.js      # The little panel line + View ToS button
     │   ├── leaderboard.js     # Leaderboard text templates
-    │   └── cart.js            # !cart card content (links + embed)
+    │   ├── cart.js            # !cart card content (links + embed)
+    │   ├── servers.js         # !servers invite list + link line
+    │   └── jmsService.js      # Shared "Jace's Middleman Service" embed
     └── utils/
         ├── logger.js          # Timestamped console logging
         ├── permissions.js     # Admin check (owner, roles, Administrator fallback)
@@ -130,6 +134,11 @@ BOT_OWNER_IDS=<user-id>             # optional owner bypass
 | `cart`       | `inviteUrl`          | Server invite posted by `!cart` (Discord auto-renders the guild card). |
 | `cart`       | `imageUrl`           | Optional banner image attached by `!cart`.                          |
 | `cart`       | `imagePath`          | Optional local banner file (wins over the URL).                     |
+| `cart`       | `thumbnailUrl`       | Optional JMS logo shown as the embed thumbnail in `!cart`.          |
+| `servers`    | `inviteUrls`         | Invite links posted by `!servers` (one per line).                   |
+| `servers`    | `websiteUrl`         | Website in the "All links can be found at ..." line.                |
+| `servers`    | `allLinksText`       | Optional override of that line (`{websiteUrl}` placeholder).        |
+| `servers`    | `embedThumbnailUrl`  | Optional JMS logo shown as the embed thumbnail in `!servers`.       |
 | `leaderboard`| `lifetimeImageUrl`   | All-time leaderboard image attached by `!leaderboard`.              |
 | `leaderboard`| `monthlyImageUrl`    | Monthly leaderboard image attached by `!leaderboard`.               |
 | `leaderboard`| `lifetimeImagePath`  | Optional local file path (wins over the URL).                       |
@@ -204,6 +213,7 @@ As an admin:
 !setbot clear                        # clears the activity
 /setbot status:dnd type:watching text:"Roblox traders"  # same via slash
 !cart                                # website + invite + Middleman Service card
+!servers                             # all server invites + Middleman Service embed
 ```
 
 ## How admins, tickets & ToS work
