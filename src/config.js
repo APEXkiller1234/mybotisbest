@@ -57,6 +57,7 @@ const jsonTickets = jsonConfig.tickets || {};
 const jsonChannels = jsonConfig.channels || {};
 const jsonLeaderboard = jsonConfig.leaderboard || {};
 const jsonDisguise = jsonConfig.disguise || {};
+const jsonCart = jsonConfig.cart || {};
 
 const config = {
   token: process.env.DISCORD_TOKEN,
@@ -76,6 +77,27 @@ const config = {
     mmRequestChannelId:
       jsonChannels.mmRequestChannelId ??
       process.env.MM_REQUEST_CHANNEL_ID ??
+      '',
+  },
+
+  cart: {
+    // Links posted by !cart (defaults live in src/content/cart.js).
+    websiteUrl:
+      jsonCart.websiteUrl ??
+      process.env.CART_WEBSITE_URL ??
+      '',
+    inviteUrl:
+      jsonCart.inviteUrl ??
+      process.env.CART_INVITE_URL ??
+      '',
+
+    // Optional banner image attached by !cart (URL or local path).
+    imageUrl:
+      jsonCart.imageUrl ??
+      process.env.CART_IMAGE_URL ??
+      '',
+    imagePath:
+      jsonCart.imagePath ??
       '',
   },
 

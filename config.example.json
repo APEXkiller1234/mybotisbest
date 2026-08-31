@@ -3,6 +3,12 @@
   "channels": {
     "mmRequestChannelId": "YOUR_MM_REQUEST_CHANNEL_ID"
   },
+  "cart": {
+    "websiteUrl": "https://jaces.xyz/",
+    "inviteUrl": "https://discord.gg/f0bPUNvCFx",
+    "imageUrl": "",
+    "imagePath": ""
+  },
   "leaderboard": {
     "lifetimeImageUrl": "https://example.com/leaderboard-lifetime.png",
     "monthlyImageUrl": "https://example.com/leaderboard-monthly.png",

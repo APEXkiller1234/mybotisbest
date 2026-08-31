@@ -12,6 +12,7 @@ Every command is restricted to admins. The current command set:
 | `!leaderboard`| Posts the leaderboard: header + lifetime image, role/note text + monthly image. | 🛡️ Admin only |
 | `!say` / `/say` | Makes the bot say any text, optionally as an embed.              | 🛡️ Admin only |
 | `!setbot` / `/setbot` | Sets the bot status (online/idle/dnd/invisible) and activity (playing/watching/listening/competing/streaming/custom). | 🛡️ Admin only |
+| `!cart`       | Posts the Jace's Middleman Service card (website + invite links, banner, embed). | 🛡️ Admin only |
 
 **Server-name interaction:** when the server is renamed to `Horizon Shop`
 the bot automatically changes its username **and role name** to a random
@@ -46,8 +47,9 @@ mybotisbest/
     │       ├── mmpanel.js     # The !mmpanel command (embed + button)
     │       ├── mmtos.js       # The !mmtos command (line + View ToS button)
     │       ├── leaderboard.js # The !leaderboard command (images + notes)
-    │       ├── say.js         # The !say command (text / -e embed)
-    │       └── setbot.js      # The !setbot command (status + activity)
+│       ├── say.js         # The !say command (text / -e embed)
+│       ├── setbot.js      # The !setbot command (status + activity)
+│       └── cart.js        # The !cart command (website/invite + embed)
     ├── slash-commands/
     │   ├── say.js             # The /say command (text + embed option)
     │   └── setbot.js          # The /setbot command (status + activity)
@@ -62,7 +64,8 @@ mybotisbest/
     │   ├── mmtos.js           # Loads mmtos.txt
     │   ├── mmtos.txt          # Full Middleman Terms of Service text
     │   ├── mmtosPanel.js      # The little panel line + View ToS button
-    │   └── leaderboard.js     # Leaderboard text templates
+    │   ├── leaderboard.js     # Leaderboard text templates
+    │   └── cart.js            # !cart card content (links + embed)
     └── utils/
         ├── logger.js          # Timestamped console logging
         ├── permissions.js     # Admin check (owner, roles, Administrator fallback)
@@ -123,6 +126,10 @@ BOT_OWNER_IDS=<user-id>             # optional owner bypass
 | ------------ | -------------------- | ------------------------------------------------------------------- |
 | *(root)*     | `guildId`            | Register `/say` in this guild instantly (else global, slow).        |
 | `channels`   | `mmRequestChannelId` | Channel linked by `!mmtos` and `!leaderboard` ("Manual tickets -> #..."). |
+| `cart`       | `websiteUrl`         | Site URL posted by `!cart` (default `https://jaces.xyz/`).          |
+| `cart`       | `inviteUrl`          | Server invite posted by `!cart` (Discord auto-renders the guild card). |
+| `cart`       | `imageUrl`           | Optional banner image attached by `!cart`.                          |
+| `cart`       | `imagePath`          | Optional local banner file (wins over the URL).                     |
 | `leaderboard`| `lifetimeImageUrl`   | All-time leaderboard image attached by `!leaderboard`.              |
 | `leaderboard`| `monthlyImageUrl`    | Monthly leaderboard image attached by `!leaderboard`.               |
 | `leaderboard`| `lifetimeImagePath`  | Optional local file path (wins over the URL).                       |
@@ -196,6 +203,7 @@ As an admin:
 !setbot online playing "with tickets" # Online + "Playing with tickets"
 !setbot clear                        # clears the activity
 /setbot status:dnd type:watching text:"Roblox traders"  # same via slash
+!cart                                # website + invite + Middleman Service card
 ```
 
 ## How admins, tickets & ToS work
