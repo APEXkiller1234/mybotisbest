@@ -84,7 +84,10 @@ async function handleTosClick(interaction) {
   await interaction.deferReply(); // public so both traders can read it
 
   return interaction.editReply({
-    embeds: textToEmbeds(tosText),
+    embeds: textToEmbeds(tosText, {
+      title: 'JMS Manual Middleman | TOS',
+      color: 0x5865f2,
+    }),
   });
 }
 
