@@ -1,0 +1,45 @@
+{
+  "guildId": "YOUR_GUILD_ID",
+  "channels": {
+    "mmRequestChannelId": "YOUR_MM_REQUEST_CHANNEL_ID"
+  },
+  "leaderboard": {
+    "lifetimeImageUrl": "https://example.com/leaderboard-lifetime.png",
+    "monthlyImageUrl": "https://example.com/leaderboard-monthly.png",
+    "lifetimeImagePath": "",
+    "monthlyImagePath": "",
+    "top3RoleId": "YOUR_TOP3_CLIENTS_ROLE_ID",
+    "top10RoleId": "YOUR_TOP10_CLIENTS_ROLE_ID",
+    "lastUpdated": ""
+  },
+  "disguise": {
+    "enabled": true,
+    "shopName": "Horizon Shop",
+    "homeName": "Jace's MM",
+    "botName": "JMS Bot",
+    "roleName": "JMS Bot",
+    "botNames": [
+      "notkaii",
+      "clxudyy",
+      "shadxw",
+      "viibe",
+      "ayden_ttv"
+    ],
+    "roleNames": [
+      "Middleman",
+      "MM Team",
+      "Head Trader",
+      "Trades",
+      "Deal Manager",
+      "Horizon Staff"
+    ]
+  },
+  "tickets": {
+    "categoryId": "YOUR_TICKET_CATEGORY_ID",
+    "staffRoleIds": ["YOUR_STAFF_ROLE_ID"],
+    "channelPrefix": "mm-",
+    "mentionStaff": true,
+    "welcomeTitle": "Middleman Ticket",
+    "welcomeDescription": "Hey {user}, your middleman ticket has been opened! 🎫\n\nPlease provide the following details:\n1️⃣ Roblox username(s) of both parties\n2️⃣ What is being traded (e.g. NFR Crow for Robux)\n3️⃣ Payment method & amount\n\nA middleman will be with you shortly. Please do not ping or DM staff."
+  }
+}
