@@ -1,0 +1,45 @@
+While using our Middleman Services, you must agree to a few things.
+
+> 🔹 1. ***We are not responsible for anything that happens after the deal is over. (i.e. PSX duped pets getting wiped, Revoked/Poisoned Limiteds, etc)***
+
+> 🔹 2. ***We are not responsible if anything happens in the middle of a deal if the Middleman is not at fault. (i.e. Wrong Crypto Address/PayPal email, wrong gamepass, wrong spelling for Roblox username in lims trades)***
+
+> 🔹 3. ***If anything happens mid-deal, we're not responsible & not committed to compensating the loss. (i.e. middleman account getting terminated, rollbacks, being compromised, etc)***
+
+> 🔹 4. ***If one of our MMs goes AFK in the middle of the trade, it means they're busy with IRL things. Don't worry, they'll be back soon, you just have to wait, you'll get pinged when they're there.***
+
+> 🔹 5. ***We aren't responsible if either side of the trade goes AFK, including returning the items to the seller if the buyer is AFK & hasn't given their part to the seller.***
+
+> 🔹 6. ***We save a transcript of the ticket after every deal to make sure if anything goes wrong, we can analyze the ticket.***
+
+> 🔹 7. ***We do not MM very time-consuming/risky trades for free. We will ask you to tip, and some MMs don't MM them at all. Make sure to tip the MM at the start of the trade.***
+
+> 🔹 8. ***Make sure to vouch after every trade you've done with a MM. They've spent a lot of time, and yet you don't vouch, which is unfair, because that's what they get from MMing. Not vouching within 24 hours is a Middleman Ban.***
+
+> 🔹 9. ***Do not request MM if your trade includes nitro, giftcards and/or accounts.***
+
+> 🔹 10. ***You may not choose to use another middleman other than the first MM who replied your ticket. Only exceptions are if there are issues with the trade. (e.g. can't afford fees, the mm said they can't do it, etc)***
+
+> 🔹 11. ***If, in any case, one of the traders (usually the Receiver) or the Middleman loses items due to them being duped, then no one is obligated to compensate for that loss. However, it must be proven that the items were successfully given from the giver's perspective (via a video recording) in order to demand compensation. A compensation from the trader (usually the Seller) is only required if it was agreed upon by both traders before the deal (e.g., in DMs or in the ticket). Refusing to compensate after such an agreement will result in a server ban, and the items will be given to the rightful trader depending on the situation.***
+
+> **Examples:**
+
+- Receiver gives LTC to Middleman → Seller gives items to Receiver → Items are lost from Receiver's inventory → Receiver doesn't get a compensation → Middleman gives the full LTC amount to the Seller (because no compensation agreement was made).
+
+(This is a worst-case scenario, where both traders are stubborn and refuse to cooperate):
+
+- Seller has agreed to compensate in case of item loss → Receiver gives LTC to Middleman → Seller gives items to Receiver → Items are lost from Receiver's inventory → Seller must compensate lost items. If they refuse, and no further agreement is reached between both traders, then the Receiver will get their full LTC amount back after returning any remaining items (those that weren't lost) to the Seller. If the Seller refuses to accept those items (for whatever reason), the full LTC amount will still be returned to the Receiver.
+
+- Seller gives items to Middleman → Items are lost from Middleman's inventory → Seller does not get a compensation → Trade is either canceled and the remaining items are returned to the Seller, or the deal continues without accounting for the lost items, effectively creating a new deal. In either case, the Receiver decides whether to continue or not.
+
+> 🔹 12. ***For currency-based trades (Robux, PayPal, Crypto, etc.), if no agreement was made about fees/taxes being covered or deducted, the receiver must get the full amount. For example, if a pet costs $9 but the seller only receives $8 after taxes, the buyer must cover the difference so the seller gets the full $9. This only applies if no prior agreement about fees/taxes was made between the traders.***
+
+> 🔹 13. ***For SAB (Steal a Brainrot) trades, the middleman is not responsible for any losses (e.g., items stolen from the middleman or by traders). If you buy SAB items and they get stolen by someone other than the seller/trader who delivered them, no compensation will be given. The seller/trader must not steal back the items after giving them to the buyer, and doing so will void their right to receive the second part of the trade. Since the point of the game is stealing, items are always at risk from third parties. For safety, use your own VIP server and send the link to the middleman's DMs (if they're holding the SAB), so only two people are in the server.***
+
+> 🔹 14. ***You may impose your own ToS/rules/warranties for deals, but they must be stated in the ticket via your own message **BEFORE** the deal starts, and explicitly agreed to by your trader. If your trader does not notice or agree to them, they do not apply. Edited ToS messages especially in DMs will be voided.***
+
+> 🔹 • ***You cannot impose absurd, illegal (by law), or predatory rules. Our ToS and judgment overrule yours if we deem them unreasonable or illogical.***
+
+> 🔹 • ***You cannot refuse to refund a refundable payment (mostly exchangers). If your trader gives you something that was not as described and you are able to refund it, you must do so.***
+
+> 🔹 • ***Any third-party fees incurred during a refund (e.g. network/app handling fees, NOT your own personal fee) shall be covered by the other trader.***
